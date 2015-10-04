@@ -20,7 +20,7 @@
         return someString.replace(test, function (match) {
             if (emojis.indexOf(match) !== -1) {
                 var name = String(match).slice(1, -1);
-                return '<img class="emoji" title=":' + name + ':" alt="' + name + '" src="' + url + '/' + encodeURIComponent(name) + '.png"' + (size ? (' height="' + size + '"') : '') + ' />';
+                return '<img class="emoji" title=":' + name + ':" alt=":' + name + ':" src="' + url + '/' + encodeURIComponent(name) + '.png"' + (size ? (' height="' + size + '"') : '') + ' />';
             } else {
                 return match;
             }
